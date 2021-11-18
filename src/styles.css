@@ -16,20 +16,17 @@ header{
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 30px;
 }
 
 button{
     border: 1px solid snow;
     background: pink;
+    cursor: pointer;
 }
 
 #load {
-    width: 100px;
-}
-
-#classify{
-    height: 50px;
     width: 100px;
 }
 
@@ -48,6 +45,7 @@ body{
     border: 1px solid black;
     margin-top: 20px;
     margin-bottom: 20px;
+    background: transparent;
 }
 
 .container {
@@ -76,6 +74,12 @@ footer {
     color: black;
 }
 
+.container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
@@ -83,6 +87,11 @@ footer {
     width: 40%;
     justify-content: space-around;
     align-items: flex-start;
+    padding: 30px;
+}
+
+.menu p {
+    margin-bottom: 20px;
 }
 
 
@@ -91,6 +100,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-right: 50px;
 }
 
 #obj{
