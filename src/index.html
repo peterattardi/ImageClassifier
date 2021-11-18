@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src = "./app.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <div class="title">
+        <h1 id="title">Image Classifier</h1>
+    </div>
+</header>
+<body>
+
+
+    <div class="container">
+        <div class="menu">
+            <p>Drag and drop an image into the box! <br>...or load from an image address.</p>
+            <label for="address"></label>
+            <div class="address">
+                <input placeholder="http://please-fill-me :(" type="text" name="address" id="address">
+                <button id = "load"onclick="load()">Upload</button>
+            </div>
+            
+            
+        </div>
+        <div class="image-container">
+            <p id="result">This is a <span id = "obj">empty box</span> with a probability of <span id = "prob">100%</span></p>
+            <div id="image_drop_area"></div>
+            <p id = "file_name"></p>
+            <button id="classify" disabled = "true" onclick="run()">Classify!</button>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <p>Source code for this website can be found on  <a href="#">Github</a>.</p>
+</footer>
+</html>
