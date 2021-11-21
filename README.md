@@ -1,3 +1,6 @@
-# ImageClassifier
-A simple image classifier built with ml5.js library
-https://peterattardi.github.io/ImageClassifier/index.html
+# Description
+A simple image classifier built with the ml5.js library.
+Learn mode: https://ml5js.org.
+
+Visit: https://peterattardi.github.io/ImageClassifier.
+P.S.: I don't care about the styling or performances, I just care that it work.
